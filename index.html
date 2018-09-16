@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Bootstrap JS and JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Moment Library CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+    <!-- Firebase Access -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+
+    <!-- Time Picker Library and Stylesheet -->
+    <script src="https://cdn.jsdelivr.net/npm/timepicker/jquery.timepicker.js"></script>
+    
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/timepicker/jquery.timepicker.css">
+
+    <!-- <link rel="stylesheet" href="./assets/css/jquery.timepicker.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-1">
+            <header id="Title" class="jumbotron col-lg-12 mx-auto mb-3">
+                <p class="CompanyName display-4 text-center">Downtown Commuter Rail</p>
+                <h1 class="Slogan text-center font-italic">"It's About Damn Time"</h1>
+            </header>
+        </div>
+    </div>
+
+    <div class="container border rounded border-primary">
+        <div class="row">
+            <p id="TableTitle" class="HeadTitle col-lg-12 mb-0 pt-3 pb-3">Current Bus Schedule</p>
+        </div>
+        <div class="row pl-3 pr-3 bg-white">
+            <table class="table table-sm table-striped table-bordered mt-2" id="TrainTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container mt-3 mb-3 border rounded border-primary">
+        <div class="row">
+            <p id="BusEntry" class="HeadTitle col-lg-12 mb-0 pt-3 pb-3">Add a Train</p>
+        </div>
+        <div class="row bg-white">
+            <form class="col-lg-12 pr-4 pl-4">
+                <div class="form-group mt-3">
+                    <label for="TrainNameField">Train Name</label>
+                    <input type="text" class="form-control input-sm" id="TrainNameField" placeholder="Train Name" autocomplete="off">
+                    <small id="TrainNameHelp" class="form-text text-muted">Enter the name of the train.</small>
+                </div>
+                <div class="form-group">
+                    <label for="DestinationField">Destination</label>
+                    <input type="text" class="form-control input-sm" id="DestinationField" placeholder="Destination" autocomplete="off">
+                    <small id="DestinationHelp" class="form-text text-muted">Enter the destination for this train.</small>
+                </div>
+                <div class="form-group">
+                    <label for="TrainTimeField">First Train Time (HH:mm - military time)</label>
+                    <input type="text" class="form-control input-sm" id="TrainTimeField" placeholder="Train Time" autocomplete="off">
+                    <small id="TrainTimeHelp" class="form-text text-muted">Enter the time of the first train.</small>
+                </div>
+                <div class="form-group">
+                    <label for="FrequencyField">Frequency (min)</label>
+                    <input type="number" class="form-control input-sm" id="FrequencyField" placeholder="Frequency" autocomplete="off">
+                    <small id="TrainTimeHelp" class="form-text text-muted mb-4">Enter the frequency in minutes.</small>
+                </div>
+                <div class="form-group">
+                    <button id="SubmitButton" class="btn btn-dark" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
