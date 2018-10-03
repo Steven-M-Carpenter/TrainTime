@@ -13,3 +13,8 @@ Usage
 Enter a new route in the space provided to include it in the list of monitored trains.
 Monitor the status section to see the train's status change to reflect the arrival in relation to the current time.
 
+Link
+----
+Leverage the link below to access this item deployed with GitHub Pages.
+
+https://steven-m-carpenter.github.io/TrainTime/
