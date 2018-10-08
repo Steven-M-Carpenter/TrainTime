@@ -15,4 +15,4 @@ Link
 ---
 Leverage the link below to access this item deployed with GitHub Pages.
 
-[Train Scheduler Project]<https://steven-m-carpenter.github.io/TrainTime/>
+[Train Scheduler Project](https://steven-m-carpenter.github.io/TrainTime/)
